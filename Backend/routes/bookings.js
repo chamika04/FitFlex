@@ -64,7 +64,7 @@ router.delete('/:id', async (req, res) => {
     res.status(200).send("Booking deleted successfully");
   } catch (error) {
     console.error("Error deleting booking:", error);
-    res.status(500).send("internal Server Error");
+    res.status(500).send("Server Error");
   }
 });
 
